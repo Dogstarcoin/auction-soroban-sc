@@ -51,8 +51,6 @@ echo "$TOKEN_ADMIN_ADDRESS" > .soroban/token_admin_address
 # This will fail if the account already exists, but it'll still be fine.
 echo Fund token-admin account from friendbot
 curl --silent -X POST "$FRIENDBOT_URL?addr=$TOKEN_ADMIN_ADDRESS" >/dev/null
-curl --silent -X POST "$FRIENDBOT_URL?addr=YOUR_ADDRESS" >/dev/null
-
 
 
 ARGS="--network $NETWORK --source token-admin"
